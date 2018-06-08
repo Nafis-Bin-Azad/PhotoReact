@@ -20,7 +20,7 @@
           </ion-item>
           <ion-item class="input-box">
             <ion-input type="text"></ion-input>
-            <ion-icon item-end name="md-person"></ion-icon>
+            <ion-icon item-end name="ios-person-outline"></ion-icon>
           </ion-item>
 
           <ion-item>
@@ -28,7 +28,7 @@
           </ion-item>
           <ion-item class="input-box">
             <ion-input type="text"> </ion-input>
-            <ion-icon item-end name="ios-mail"></ion-icon>
+            <ion-icon item-end name="ios-mail-outline"></ion-icon>
           </ion-item>
 
 
@@ -48,16 +48,17 @@
           <button class="sign-up" ion-button full round>Sign Up</button>
         </ion-row>
         <ion-row>
-          <button (click)='openLogInPage()' class="sign-in" ion-button full round>Sign In</button>
+          <button (click)='openLogInPage()' class="sign-up-facebook" ion-button full round>Sign Up with Facebook</button>
+        </ion-row>
+        <ion-row>
+            <ion-label class="redirect-signin">Already have an account? <a (click)='openLogInPage()'> Sign In </a></ion-label>
         </ion-row>
       </ion-grid>
     </div>
 
 
     <ion-grid class="grid-bottom">
-      <ion-row>
-        <a (click)='openLogInPage()' class="sign-in">Sign In</a>
-      </ion-row>
+      
     </ion-grid>
 
   </div>

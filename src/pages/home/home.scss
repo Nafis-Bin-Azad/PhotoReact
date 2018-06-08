@@ -1,15 +1,14 @@
 page-home {
     .content-body {
         padding: 50px !important;
-
-        .grid-top {
-            text-align: center;
-            ion-label {
+        .grid-top { 
+            text-align: center !important;
+            .AppTitle{
                 margin: 0px;
                 font: bold 35px Herculanum, regular;
                 color: #182C5E;
             }
-            p {
+            .Description {
                 margin: 0px;
                 padding: 0px 30px;
                 font: 12px Helvetica, regular;
