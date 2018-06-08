@@ -1,18 +1,64 @@
-<!--
-  Generated template for the SignUpPage page.
+<ion-content fullscreen>
+  <div class="content-body">
+    <ion-grid class="grid-top">
+      <ion-row>
+        <ion-col>
+          <img src="assets/icon/AppIcon.png">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-label>Sign Up</ion-label>
+      </ion-row>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+    </ion-grid>
+    <div id="overlay">
+      <ion-card id="card">
+        <ion-list no-lines>
 
-  <ion-navbar>
-    <ion-title>SignUp</ion-title>
-  </ion-navbar>
+          <ion-item>
+            <ion-label>Full Name</ion-label>
+          </ion-item>
+          <ion-item class="input-box">
+            <ion-input type="text"></ion-input>
+            <ion-icon item-end name="md-person"></ion-icon>
+          </ion-item>
 
-</ion-header>
+          <ion-item>
+            <ion-label>E-Mail</ion-label>
+          </ion-item>
+          <ion-item class="input-box">
+            <ion-input type="text"> </ion-input>
+            <ion-icon item-end name="ios-mail"></ion-icon>
+          </ion-item>
 
 
-<ion-content padding>
+          <ion-item>
+            <ion-label>Password</ion-label>
+          </ion-item>
+          <ion-item class="input-box">
+            <ion-input type="password"> </ion-input>
+            <ion-icon name="ios-eye-outline" item-right></ion-icon>
+          </ion-item>
 
+        </ion-list>
+
+      </ion-card>
+      <ion-grid class="buttons-grid">
+        <ion-row>
+          <button class="sign-up" ion-button full round>Sign Up</button>
+        </ion-row>
+        <ion-row>
+          <button (click)='openLogInPage()' class="sign-in" ion-button full round>Sign In</button>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+
+    <ion-grid class="grid-bottom">
+      <ion-row>
+        <a (click)='openLogInPage()' class="sign-in">Sign In</a>
+      </ion-row>
+    </ion-grid>
+
+  </div>
 </ion-content>

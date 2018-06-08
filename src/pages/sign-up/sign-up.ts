@@ -22,4 +22,8 @@ export class SignUpPage {
     console.log('ionViewDidLoad SignUpPage');
   }
 
+  openLogInPage(){
+    // this.navCtrl.push(SignUpPage);
+  }
+
 }
