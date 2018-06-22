@@ -1,91 +1,96 @@
 page-sign-up {
-    .content-body{
-        height:100%;
-        width:100%;
+    .scroll-content{
+        background: url("../assets/imgs/BG/background-1.png");
+        background-size: cover;
+    }
+    .content-body {
+        
+        height: 100%;
+        width: 100%;
         .grid-top {
             padding-top: 50px;
             position: absolute;
             text-align: center;
-            background: linear-gradient(to right, #2FA8FF, #2AD0FE);
-            height: 50%;
-
-            img{
-                width:130px;
-                height: 130px;
+            height: 40%;
+            img {
+                width: 80px;
+                height: 80px;
             }
-            ion-label{
-                margin:0px;
-                color:white;
-                font: 2.5rem Arial, regular;
+            ion-label {
+                margin: 0px;
+                color: white;
+                font: 1.3em Arial;
             }
         }
-
-        #overlay{
+        #overlay {
             position: relative;
             width: 100%;
             height: auto;
-            top: 40%;
-
+            top: 32%;
             #card {
+                background-color: rgba(255, 255, 255, 0.4);
                 margin: auto 5% !important;
-                padding:30px 10% 70px 10%;
+                padding: 30px 10% 70px 10%;
                 border-radius: 5px !important;
-                position: relative; /* Sit on top of the page content */
-                
-                width: 90%; /* Full width (cover the whole page) */
+                position: relative;
+                /* Sit on top of the page content */
+                width: 90%;
+                /* Full width (cover the whole page) */
                 height: 100%;
-                z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-        
-                .item-block, ion-item{
+                z-index: 2;
+                /* Specify a stack order in case you're using a different order for other elements */
+                .item-block,
+                ion-item {
+                    background-color: transparent;
                     min-height: 1rem;
                 }
-                ion-item{
-                    margin:0px;
-                    padding:0px;
-                    
+                ion-item {
+                    margin: 0px;
+                    padding: 0px;
                 }
-                ion-label{
-                    margin:10px 0px 0px 0px;
-                    color:lightgrey;
+                ion-label {
+                    margin: 10px 0px 0px 0px;
+                    color: lightgrey;
                 }
-                
-                input, ion-icon, item-inner{
-                    margin:0px;
-                    padding:0px;
+                input,
+                ion-icon,
+                item-inner {
+                    color: white;
+                    margin: 0px;
+                    padding: 0px;
                 }
-                
-                .input-box{ //Draws Line under the input boxes
-                    border-bottom:1px solid black;
+                .input-box {
+                    //Draws Line under the input boxes
+                    border-bottom: 1px solid black;
                 }
-                
-                
             }
-            .buttons-grid{
+            .buttons-grid {
                 width: 100%;
-                position: absolute; /* Sit on top of the page content */
+                position: absolute;
+                /* Sit on top of the page content */
                 bottom: -125px;
-                z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+                z-index: 3;
+                /* Specify a stack order in case you're using a different order for other elements */
                 text-align: center;
-                button{
+                button {
                     margin: 5px auto;
                     width: 80%;
                 }
-                .sign-up{
-                    background: linear-gradient(to right, #2FA8FF , #2AD0FE);
+                .sign-up {
+                    // background: linear-gradient(to right, #2FA8FF, #2AD0FE);
+                    background: linear-gradient(to right, #454545 , #7c7c7c);
                 }
-                .sign-up-facebook{
+                .sign-up-facebook {
                     background-color: #2754B7;
                     color: white;
                 }
+                ion-label{
+                    color:white;
+                    a{
+                        color:lightgray;
+                    }
+                }
             }
         }
-        .grid-bottom {
-            background: white;
-            height: 50%;
-        }
     }
-    
-
-    
-
 }

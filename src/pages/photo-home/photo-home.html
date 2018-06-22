@@ -1,0 +1,28 @@
+<!--
+  Generated template for the PhotoHomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+    <ion-item no-lines>
+        <button large item-left ion-button round icon-only clear>
+            <ion-icon name="ios-add-circle-outline"></ion-icon>
+          </button>
+          <ion-label item-center>PhotoReact</ion-label>
+          <button large item-right ion-button round icon-only clear>
+              <ion-icon name="ios-menu"></ion-icon>
+            </button>
+    </ion-item>
+</ion-header>
+<ion-content>
+
+  <ion-list no-lines>
+    <div>
+        <img  *ngFor="let image of [0,1,2,3,4,5,6,7,8,9,10,11,12,13]" src="../assets/imgs/DummyImages/{{image}}.jpg">
+    </div>
+    
+  </ion-list>
+
+</ion-content>

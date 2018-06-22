@@ -1,3 +1,4 @@
+import { SignInPage } from './../pages/sign-in/sign-in';
 import { SignUpPage } from './../pages/sign-up/sign-up';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -7,12 +8,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { PhotoHomePage } from '../pages/photo-home/photo-home';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    SignUpPage
+    SignUpPage,
+    SignInPage,
+    PhotoHomePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    SignUpPage
+    SignUpPage,
+    SignInPage,
+    PhotoHomePage
   ],
   providers: [
     StatusBar,

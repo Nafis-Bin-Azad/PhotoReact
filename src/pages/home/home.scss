@@ -1,4 +1,8 @@
 page-home {
+    .scroll-content{
+        background: url("../assets/imgs/BG/background-1.png");
+        background-size: cover;
+    }
     .content-body {
         padding: 50px !important;
         .grid-top { 
@@ -6,7 +10,7 @@ page-home {
             .AppTitle{
                 margin: 0px;
                 font: bold 35px Herculanum, regular;
-                color: #182C5E;
+                color: white;
             }
             .Description {
                 margin: 0px;
@@ -18,15 +22,20 @@ page-home {
         .grid-bottom {
             padding-top: 30px !important;
             button{
-                box-shadow: 0px 5px 5px lightgray;
+                // box-shadow: 0px 5px 5px lightgray;
             }
-            .sign-up{
-                background: linear-gradient(to right, #2FA8FF , #2AD0FE);
-            }
+            
             .sign-in{
                 border: 1px #C8E8FF solid;
+                color: #9b9b9b;
                 background-color: white;
-                color: #2DB4FF;
+                
+            }
+            .sign-up{
+               
+                // background: linear-gradient(to right, #2FA8FF , #2AD0FE);
+                background: linear-gradient(to right, #454545 , #7c7c7c);
+                
             }
         }
     }

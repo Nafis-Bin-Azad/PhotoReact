@@ -1,0 +1,48 @@
+<ion-content fullscreen>
+    <div class="content-body">
+      <ion-grid class="grid-top">
+        <ion-row>
+          <ion-col>
+            <img src="assets/icon/AppIcon.png">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-label>Sign In</ion-label>
+        </ion-row>
+  
+      </ion-grid>
+      <div id="overlay">
+        <ion-card id="card">
+          <ion-list no-lines>
+            <ion-item>
+              <ion-label>E-Mail</ion-label>
+            </ion-item>
+            <ion-item class="input-box">
+              <ion-input type="text"> </ion-input>
+              <ion-icon item-end name="ios-mail-outline"></ion-icon>
+            </ion-item>
+            <ion-item>
+              <ion-label>Password</ion-label>
+            </ion-item>
+            <ion-item class="input-box">
+              <ion-input type="password"> </ion-input>
+              <ion-icon name="ios-eye-outline" item-right></ion-icon>
+            </ion-item>
+          </ion-list>
+        </ion-card>
+        <ion-grid class="buttons-grid">
+          <ion-row>
+            <button (click)='logIn()' class="sign-up" ion-button full round>Sign In</button>
+          </ion-row>
+          <ion-row>
+              <ion-label class="redirect-signin">Don't have an account? <a (click)='openSignUpPage()'> Create Now </a></ion-label>
+          </ion-row>
+        </ion-grid>
+      </div>
+  
+      <ion-grid class="grid-bottom">
+        
+      </ion-grid>
+  
+    </div>
+  </ion-content>
