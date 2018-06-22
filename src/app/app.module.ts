@@ -1,3 +1,4 @@
+import { PhotoVotePage } from './../pages/photo-vote/photo-vote';
 import { SignInPage } from './../pages/sign-in/sign-in';
 import { SignUpPage } from './../pages/sign-up/sign-up';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,8 @@ import { PhotoHomePage } from '../pages/photo-home/photo-home';
     HomePage,
     SignUpPage,
     SignInPage,
-    PhotoHomePage
+    PhotoHomePage,
+    PhotoVotePage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { PhotoHomePage } from '../pages/photo-home/photo-home';
     HomePage,
     SignUpPage,
     SignInPage,
-    PhotoHomePage
+    PhotoHomePage,
+    PhotoVotePage
   ],
   providers: [
     StatusBar,

@@ -1,18 +1,53 @@
 .ios,.md{
     page-photo-home {
+        ion-header{
+            .input-wrapper{
+                font: bold 1.3em Herculanum, regular;
+            }
+        }
         .scroll-content,.toolbar-background,.input-wrapper, .item {
             background-color: black;
             border: 0px;
             color: white;
             text-align: center;
-            font: bold 1.3em Herculanum, regular;
+            
             .icon{
                 color: white; 
             }
         }
-        img{
-            width: 100%;
+        
+        
+        .img-container {
+            position: relative;
+            // height: 200px;
+            img{
+                // height: 100%;
+                width: 100%;
+            }
+            div{
+                position: absolute;
+                bottom:0px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                h3{
+                    display: inline-block;
+                    font-size: 1em;
+                    color: #fff;
+                }
+                #attractiveness-text{
+                    padding-left: 10px; 
+                    float: left;
+                }
+                #votes-text{
+                    padding-right: 10px;
+                    float:right;
+                }
+            }
+            
         }
+         
+          
+        
 
 
     }

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PhotoVotePage } from '../photo-vote/photo-vote';
 
 /**
- * Generated class for the PhotoHomePage page.
+ * Generated class for the PhotoVotePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,19 +10,18 @@ import { PhotoVotePage } from '../photo-vote/photo-vote';
 
 @IonicPage()
 @Component({
-  selector: 'page-photo-home',
-  templateUrl: 'photo-home.html',
+  selector: 'page-photo-vote',
+  templateUrl: 'photo-vote.html',
 })
-export class PhotoHomePage {
+export class PhotoVotePage {
+
+  loveMeter = 3;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PhotoHomePage');
+    console.log('ionViewDidLoad PhotoVotePage');
   }
 
-  openImage(){
-    this.navCtrl.push(PhotoVotePage);
-  }
 }

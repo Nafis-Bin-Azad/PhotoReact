@@ -1,0 +1,47 @@
+page-photo-vote {
+    .scroll-content {
+        background-color: black;
+    }
+    height: 100%;
+    width: 100%;
+    
+    .image-container{
+        position: relative;
+        background-image: url('../assets/imgs/DummyImages/3.jpg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        border: 1px solid rgba(211, 211, 211, 0.116);
+        height: 98%;
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+        ion-item{
+            position: absolute;
+            border-radius: 50px;
+            background-color: rgba(0, 0, 0,.5);
+            bottom: 10px;
+            left: 0px;
+            .range-ios .range-tick-active , .range-tick{
+                background: white;
+                border-radius: 50px;
+                width: 10px;
+                height: 10px;
+            }
+            .range-bar{
+                background: transparent;
+            }
+            .range-knob-handle{
+                height: 40px;
+                width: 40px;
+                // margin: auto;
+                // padding: auto;
+                .range-knob{
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            
+        }
+    }
+}

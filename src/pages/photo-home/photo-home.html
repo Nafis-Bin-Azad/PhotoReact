@@ -19,8 +19,13 @@
 <ion-content>
 
   <ion-list no-lines>
-    <div>
-        <img  *ngFor="let image of [0,1,2,3,4,5,6,7,8,9,10,11,12,13]" src="../assets/imgs/DummyImages/{{image}}.jpg">
+    <div (click)="openImage()" *ngFor="let image of [0,1,2,3,4,5,6,7,8,9,10,11,12,13]" class="img-container">
+        <img src="../assets/imgs/DummyImages/{{image}}.jpg">
+        <div>
+            <h3 id="attractiveness-text">78% Attractiveness</h3>
+            <h3 id="votes-text">19 Votes</h3>
+        </div>
+        
     </div>
     
   </ion-list>
